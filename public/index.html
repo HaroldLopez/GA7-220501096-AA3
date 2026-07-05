@@ -1,40 +1,57 @@
+<!--
+Autor: Harold López
+Evidencia: GA7-220501096-AA4-EV03
+
+Página principal del módulo de registro de productos de SkinCareApp.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>SkinCareApp</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCareApp</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<h1>Registro de Productos</h1>
+    <!-- Título principal -->
+    <h1>Registro de Productos</h1>
 
-<form id="formulario">
+    <!-- Formulario de registro -->
+    <form id="formulario">
 
-<input
-type="text"
-id="nombre"
-placeholder="Nombre del producto"
-required>
+        <!-- Campo para el nombre del producto -->
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre del producto"
+            required>
 
-<textarea
-id="descripcion"
-placeholder="Descripción">
-</textarea>
+        <!-- Campo para la descripción -->
+        <textarea
+            id="descripcion"
+            placeholder="Descripción">
+        </textarea>
 
-<input
-type="number"
-id="precio"
-placeholder="Precio"
-required>
+        <!-- Campo para el precio -->
+        <input
+            type="number"
+            id="precio"
+            placeholder="Precio"
+            required>
 
-<button type="submit">
-Guardar
-</button>
+        <!-- Botón para guardar -->
+        <button type="submit">
+            Guardar
+        </button>
 
-</form>
+    </form>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -16,6 +16,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
+/*
+Configuración de la conexión con MariaDB
+*/
+
 const conexion = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -23,16 +27,20 @@ const conexion = mysql.createConnection({
     database: "skincareapp"
 });
 
+/*
+Conexión al servidor de base de datos
+*/
+
 conexion.connect((error) => {
-    if(error){
+    if (error) {
         console.log(error);
-    }else{
+    } else {
         console.log("Base de datos conectada");
     }
 });
 
 /*
-Registrar producto
+Ruta POST para registrar un producto nuevo
 */
 app.post("/productos", (req, res) => {
 
@@ -49,9 +57,9 @@ app.post("/productos", (req, res) => {
         [nombre, descripcion, precio],
         (error, resultado) => {
 
-            if(error){
+            if (error) {
                 res.status(500).json(error);
-            }else{
+            } else {
                 res.json({
                     mensaje: "Producto registrado correctamente"
                 });
@@ -59,6 +67,10 @@ app.post("/productos", (req, res) => {
         }
     );
 });
+
+/*
+Inicio del servidor
+*/
 
 app.listen(3000, () => {
     console.log("Servidor ejecutándose en puerto 3000");
