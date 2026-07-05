@@ -1,5 +1,7 @@
 https://github.com/HaroldLopez/GA7-220501096-AA3.git
 
+este proyecto es el mismo que he estado trabajando con antelacion por eso siempre lleva el mismo nombre pero en esta ocasión me enfoque en verificar buenas prácticas organizacipon
+y le di un poco más de legibilidad y comprensión con ayuda de los comentarios, gracias.
 
 Instrucciones de uso
 
